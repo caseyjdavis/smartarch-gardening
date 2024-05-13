@@ -1,0 +1,43 @@
+site_name: Smartarch Gardening
+
+theme:
+  icon:
+    logo: material/flower-tulip
+  name: material
+  features:
+    - header.autohide
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Light mode
+      primary: blue
+      accent: orange
+  
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: orange
+  
+  plugins: 
+   - search :
+   - resize-images:
+        source-dir: assets-large
+        target-dir: assets
+        enable_cache: True
+        size: [800, 600]
+        extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg']
+
+  nav:
+  - Home: 'index.md'
+  - About: 'about.md'
